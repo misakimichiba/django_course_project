@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Users
+{% endblock  %}
+
+{% block content %}
+  <section>
+    <h1>Register a New User</h1>
+
+    {% for user in users %}
+      <article class="user">
+        <h2>
+            {{ user.username }}
+        </h2>
+      </article>
+    {% endfor %}
+  </section>
+{% endblock  %}
